@@ -23,7 +23,7 @@ class ProjectController extends Controller
 
     // Store a newly created resource in storage.
 
-
+    //app/Traits/Projects/ProjectStore.php
     public function store(Request $request)
     {
         return $this->projectStore($request);
@@ -40,6 +40,7 @@ class ProjectController extends Controller
     }
 
     // Update the specified resource in storage.
+    //app/Traits/Projects/ProjectUpdate.php
     use ProjectUpdate;
     public function update(Request $request, $id)
     {
